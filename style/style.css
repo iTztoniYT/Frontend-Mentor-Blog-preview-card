@@ -1,0 +1,81 @@
+@import url(reset.css);
+
+:root{
+    /* Primary */
+    --Yellow: hsl(47, 88%, 63%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    
+    /* Body Copy */
+    --Font-size: 1rem;
+
+    /* Font */
+    --font-family: 'Figtree', sans-serif;
+    --fw600: 600;
+    --fw800: 800;
+
+    
+    /* - Mobile: 375px
+    - Desktop: 1440px */
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--Font-size);
+    background-color: var(--Yellow);
+
+    /* centering the card */
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin: 0; /* Remove default margin to ensure full width */
+}
+.wrapper{
+    background-color: var(--White);
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    max-width: 23.43rem;
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 10px 10px 2px #000000;
+
+}
+.grid-container{display: grid; gap: 0.825rem;}
+.img-br{border-radius: 0.925rem;}
+
+.learning{
+    background-color: var(--Yellow);
+    max-width: 5rem;
+    font-weight: var(--fw800);
+    padding: 0.155rem;
+    text-align: center;
+    border-radius: 0.225rem;
+}
+.published{
+    color: var(--Grey);
+    font-size: var(--fw800);
+}
+.txt-trans{text-transform: capitalize;}
+.heading{
+    text-transform: uppercase;
+    font-weight: var(--fw800);
+    font-size: 1.4em;
+}
+.para-content{color: var(--Grey);}
+.blogger{
+    display: flex;
+    align-items: center;
+    gap: 0.725rem;
+}
+.blogger-img{
+    max-width: 100%;
+    width: 10%;
+}
+.blogger-name{
+    font-weight: var(--fw800);
+}
